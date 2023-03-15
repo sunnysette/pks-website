@@ -41,6 +41,6 @@ module.exports = {
       },
     },
     "gatsby-disable-404",
-    "gatsby-plugin-no-javascript",
+    // "gatsby-plugin-no-javascript",
   ]
 };
