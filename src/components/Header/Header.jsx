@@ -12,9 +12,9 @@ function Header() {
 				</div>
 				<div className={styles.menu}>
 					<ul>
-						<li>Our services</li>
-						<li>About us</li>
-						<li>Contact us</li>
+						<li><a href="#our-services">Our services</a></li>
+						<li><a href="#about-us">About us</a></li>
+						<li><a href="#contacts-us">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
