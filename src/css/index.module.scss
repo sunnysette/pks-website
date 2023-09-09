@@ -1,6 +1,6 @@
 .services {
 	background-color: #fff;
-	padding: 5rem;
+	padding: var(--spacing-1);
 	color: #444;
 
 	> .intro,
@@ -24,12 +24,28 @@
 			width: 30%;
 		}
 	}
+
+	@media(max-width: 767px) {
+		padding: var(--spacing-1) var(--spacing-2);
+
+		> .intro {
+			flex-wrap: wrap-reverse;
+
+			> div {
+				width: 100%;
+
+				&:last-child {
+					margin-bottom: var(--spacing-1);
+				}
+			}
+		}
+	}
 }
 
 .about-us {
 	background-color: #ddd;
 	color: #333;
-	padding: 5rem;
+	padding: var(--spacing-1);
 
 	.image {
 		width: 45%;
@@ -49,14 +65,43 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	@media(max-width: 767px) {
+		padding: var(--spacing-1) var(--spacing-2);
+
+		.container {
+			flex-wrap: wrap;
+		}
+		.image {
+			width: 100%;
+		}
+		.description {
+			padding-bottom: var(--spacing-2);
+			width: 100%;
+
+			.title {
+				margin-top: 0;
+			}
+			p:last-child {
+				margin-bottom: 0;
+			}
+		}	
+	}
 }
 
 .contact-us {
 	background-color: rgba(0,0,0,0.3);
-	padding: 5rem;
+	padding: var(--spacing-1);
 	text-align: center;
 
 	.container {
 		max-width: 500px;
+	}
+	.title {
+		margin-top: 0;
+	}
+
+	@media(max-width: 767px) {
+		padding: var(--spacing-1) var(--spacing-2);
 	}
 }

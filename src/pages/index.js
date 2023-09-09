@@ -43,7 +43,7 @@ const IndexPage = () => {
               <img src="https://www.nationwideconcreting.co.uk/files/concrete_finishing_machines_min1.jpg" />
             </div>
             <div className={styles.description}>
-              <h3>About us</h3>
+              <h3 className={styles.title}>About us</h3>
               <p>We are a recently founded company based in Allenton, Derby, specializing in delivering high-quality concrete finishing solutions to the Midlands market. Our team of experienced professionals is committed to providing exceptional service and results that meet the specific needs of our customers.</p>
               <p>At our company, we take pride in our ability to deliver top-quality concrete finishing services that are tailored to meet the needs of our clients. Whether you require concrete finishing for commercial or residential projects, we are here to help you achieve your goals. Our team of skilled professionals is equipped with the latest technologies and techniques to ensure that your project is completed on time and within budget. <a href="#contact-us">Contact us today</a> to learn more about our services and how we can help you achieve your concrete finishing needs in the Midlands region.</p>
             </div>
@@ -51,7 +51,7 @@ const IndexPage = () => {
         </div>
         <div id="contact-us" className={styles.contactUs}>
           <div className={[styles.container, sharedStyles.container].join(' ')}>
-            <h3>Contact us</h3>
+            <h3 className={styles.title}>Contact us</h3>
             <p>We are always happy to hear from our customers and answer any questions you may have about our services. Please feel free to contact us today to schedule a consultation or request a quote.</p>
             <p>You can reach us by phone at (insert phone number) or email us at (insert email address). We look forward to serving you soon.</p>
           </div>

@@ -9,7 +9,7 @@
 		align-items: center;
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 1em;
+		padding: 1em 2em;
 	}
 	.logo {
 		img {
@@ -31,6 +31,21 @@
 			&:hover,
 			&:focus {
 				color: #ddd;
+			}
+		}
+	}
+
+	@media(max-width: 767px) {
+		.logo {
+			img {
+				width: 200px;
+			}
+		}
+	}
+	@media(max-width: 599px) {
+		.logo {
+			img {
+				width: 150px;
 			}
 		}
 	}
