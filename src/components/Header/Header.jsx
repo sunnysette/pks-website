@@ -30,11 +30,11 @@ function Header() {
 					<img src={logo} alt="Logo" width="250" />
 				</div>
 				<div className={menuClasses.join(' ')}>
-					<div role="button" className={styles.hamburger} tabIndex={0} onClick={onToggleMenu}>
+					<button className={styles.hamburger} onClick={onToggleMenu}>
 						<span />
 						<span />
 						<span />
-					</div>
+					</button>
 					<ul>
 						<li><a href="#our-services" onClick={onLinkClick}>Our services</a></li>
 						<li><a href="#about-us" onClick={onLinkClick}>About us</a></li>
