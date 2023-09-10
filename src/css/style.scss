@@ -1,6 +1,29 @@
+html {
+	font-size: 16px;
+
+	@media(max-width: 599px) {
+		font-size: 14px;
+	}
+}
+
 body {
 	font-family: Roboto, sans-serif;
-	background-color: #1e4344;
+	background-color: var(--primary);
 	color: #fff;
 	line-height: 1.4;
+}
+
+:root {
+	--primary: #1e4344;
+	--spacing-1: 5rem;
+	--spacing-2: 5rem;
+
+	@media(max-width: 767px) {
+		--spacing-1: 3rem;
+		--spacing-2: 2rem;
+	}
+	@media(max-width: 479px) {
+		--spacing-1: 2rem;
+		--spacing-2: 1.5rem;
+	}
 }
