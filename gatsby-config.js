@@ -8,17 +8,6 @@ module.exports = {
   },
   // "gatsby-plugin-google-gtag",
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        "icon": "src/images/favicon.svg"
-      }
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -26,6 +15,17 @@ module.exports = {
         "path": "./src/images/"
       },
       __key: "images"
+    },
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/logo.png"
+      }
     },
     {
       resolve: `gatsby-omni-font-loader`,
@@ -40,7 +40,12 @@ module.exports = {
         ],
       },
     },
-    "gatsby-disable-404",
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en-GB'
+      }
+    },
     // "gatsby-plugin-no-javascript",
   ]
 };

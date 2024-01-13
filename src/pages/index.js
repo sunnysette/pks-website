@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { StaticImage } from 'gatsby-plugin-image';
+
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Hero } from '../components/Hero';
@@ -16,7 +18,7 @@ const IndexPage = () => {
         <div id="our-services" className={styles.services}>
           <div className={[styles.intro, sharedStyles.container].join(' ')}>
             <div>
-              <img src="https://www.shutterstock.com/image-photo/malacca-malaysia-september-28-2016-260nw-494298121.jpg" alt="Working workers" />
+              <StaticImage src="../images/power-floating.jpg" alt="Working on concrete finishing" placeholder="blurred" />
             </div>
             <div>
               <p>At PK Constructions, we offer a comprehensive range of concrete finishing services, including Tamp/Float Finish, Power floating/Pan Finish, Brushed Finish, Sloped/Ramped.</p>
@@ -27,20 +29,23 @@ const IndexPage = () => {
           </div>
           <div className={[styles.list, sharedStyles.container].join(' ')}>
             <div>
-              <img src="https://www.nationwideconcreting.co.uk/files/brushed_concrete.jpg" />
+              <StaticImage src="../images/power-floating.jpg" alt="Working on concrete finishing" placeholder="blurred" />
             </div>
             <div>
-              <img src="https://www.nationwideconcreting.co.uk/files/tamping.jpg" />
+              <StaticImage src="../images/midlands-finishing-expert.jpg" alt="Finishing Expert in Midlands" placeholder="blurred" />
             </div>
             <div>
-              <img src="https://www.nationwideconcreting.co.uk/files/power_float_concrete_finish.jpg" />
+              <StaticImage src="../images/concrete-finishing.jpg" alt="Concrete work done by PK Constructions" placeholder="blurred" />
+            </div>
+            <div>
+              <StaticImage src="../images/brushed-finishing.jpg" alt="Finshing job done by PK Constructions" placeholder="blurred" />
             </div>
           </div>
         </div>
         <div id="about-us" className={styles.aboutUs}>
           <div className={[styles.container, sharedStyles.container].join(' ')}>
             <div className={styles.image}>
-              <img src="https://www.nationwideconcreting.co.uk/files/concrete_finishing_machines_min1.jpg" />
+              <StaticImage src="../images/concrete-finishing-machines.jpg" alt="Concrete finishing Machine" placeholder="blurred" />
             </div>
             <div className={styles.description}>
               <h3 className={styles.title}>About us</h3>
@@ -53,7 +58,7 @@ const IndexPage = () => {
           <div className={[styles.container, sharedStyles.container].join(' ')}>
             <h3 className={styles.title}>Contact us</h3>
             <p>We are always happy to hear from our customers and answer any questions you may have about our services. Please feel free to contact us today to schedule a consultation or request a quote.</p>
-            <p>You can reach us by phone at (insert phone number) or email us at (insert email address). We look forward to serving you soon.</p>
+            <p>You can reach us by phone at <a href="tel:+447863972610">+44 7863972610</a> or email us at <a href="mailto:pkconstructionmidland@gmail.com">pkconstructionmidland@gmail.com</a>. We look forward to serving you soon.</p>
           </div>
         </div>
       </main>
@@ -68,6 +73,5 @@ export const Head = () => (
   <>
     <title>Expert Concrete Finishing Services in Derby | PK Constructions</title>
     <meta name="description" content="For top-quality concrete finishing services in Derby, trust PK Constructions. Contact us today for Tamp/Float, Power floating/Pan, Brushed, Sloped/Ramped finishes." />
-    <meta name="robots" content="noindex,nofollow" />
   </>
 );
