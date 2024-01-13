@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 const pageStyles = {
-  color: "#232129",
+  color: "#fff",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
@@ -23,6 +23,10 @@ const codeStyles = {
   borderRadius: 4,
 }
 
+const linkStyle = {
+  color: "#fff",
+}
+
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
@@ -38,7 +42,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/" style={linkStyle}>Go home</Link>.
       </p>
     </main>
   )

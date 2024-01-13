@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react';
 
-import logo from '../../images/logo-3.svg';
 import * as styles from './Header.module.scss';
+import { StaticImage  } from 'gatsby-plugin-image';
 
 function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -19,15 +19,17 @@ function Header() {
 	}, [menuOpen]);
 
 	const onLinkClick = useCallback(() => {
-		setMenuOpen((s) => !s);
-		document.body.classList.toggle(styles.unscrollable);
-	}, []);
+		setMenuOpen(false);
+		if (menuOpen) {
+			document.body.classList.remove(styles.unscrollable);
+		}
+	}, [menuOpen]);
 
 	return (
 		<header className={styles.header}>
 			<div>
 				<div className={styles.logo}>
-					<img src={logo} alt="Logo" width="250" />
+					<StaticImage src="../../images/logo.png" alt="PK Constructions Midlands Logo" width={90} />
 				</div>
 				<div className={menuClasses.join(' ')}>
 					<button className={styles.hamburger} onClick={onToggleMenu}>
