@@ -58,7 +58,7 @@ const IndexPage = () => {
           <div className={[styles.container, sharedStyles.container].join(' ')}>
             <h3 className={styles.title}>Contact us</h3>
             <p>We are always happy to hear from our customers and answer any questions you may have about our services. Please feel free to contact us today to schedule a consultation or request a quote.</p>
-            <p>You can reach us by phone at <a href="tel:+447863972610">+44 7863972610</a> or email us at <a href="mailto:pkconstructionmidland@gmail.com">pkconstructionmidland@gmail.com</a>. We look forward to serving you soon.</p>
+            <p>You can reach us by phone at <a href="tel:+447863972610">+44 7863972610</a> or email us at <a href="mailto:info@pkconstructions.uk">info@pkconstructions.uk</a>. We look forward to serving you soon.</p>
           </div>
         </div>
       </main>
@@ -73,5 +73,13 @@ export const Head = () => (
   <>
     <title>Expert Concrete Finishing Services in Derby | PK Constructions</title>
     <meta name="description" content="For top-quality concrete finishing services in Derby, trust PK Constructions. Contact us today for Tamp/Float, Power floating/Pan, Brushed, Sloped/Ramped finishes." />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGCP3X7VDG"></script>
+    <script>
+      {`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QGCP3X7VDG');`}
+    </script>
   </>
 );
