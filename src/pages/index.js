@@ -73,6 +73,14 @@ export const Head = () => (
   <>
     <title>Expert Concrete Finishing Services in Derby | PK Constructions</title>
     <meta name="description" content="For top-quality concrete finishing services in Derby, trust PK Constructions. Contact us today for Tamp/Float, Power floating/Pan, Brushed, Sloped/Ramped finishes." />
+    <script type="application/ld+json">
+    {`{
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "PK Constructions",
+      "url" : "https://www.pkconstructions.uk",
+    }`}
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGCP3X7VDG"></script>
     <script>
       {`window.dataLayer = window.dataLayer || [];
