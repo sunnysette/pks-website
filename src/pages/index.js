@@ -78,7 +78,7 @@ export const Head = () => (
       "@context" : "https://schema.org",
       "@type" : "WebSite",
       "name" : "PK Constructions",
-      "url" : "https://www.pkconstructions.uk",
+      "url" : "https://www.pkconstructions.uk"
     }`}
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGCP3X7VDG"></script>
